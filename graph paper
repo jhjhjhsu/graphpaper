@@ -1,0 +1,26 @@
+"""
+
+graphpaper.py
+
+print graph paper
+
+
+"""
+
+import sys
+
+b=input("How many rows of boxes? ")
+rows=int(b)
+
+b=input("How many columns of boxes? ")
+columns=int(b)
+
+b=input("How many rows of spaces in each box (e.g., 1)? ")
+RowSpaces=int(b)
+
+b=input("How many columns of spaces in each box (e.g., 3)? ")
+ColumnSpaces=int(b)
+
+print(f"|,{''*ColumnnSpaces},|")
+    
+sys.exit(0)
