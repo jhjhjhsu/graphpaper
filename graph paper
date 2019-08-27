@@ -21,6 +21,25 @@ RowSpaces=int(b)
 b=input("How many columns of spaces in each box (e.g., 3)? ")
 ColumnSpaces=int(b)
 
-print(f"|,{''*ColumnnSpaces},|")
+c=ColumnSpaces*"-"      #-----
+Lines="+"+c             #+---
+Lines=columns*Lines     #multiples of +----
+
+r=RowSpaces*" "         #"    "(spaces)
+Blanks= "|"+r           #"|    "
+Blanks= Blanks*columns   #multiples of "|     "  
+
+x=0
+y=0
+while x < rows:
+    print(f"{Lines}+")    #print rows of +----+---+
+    while y < RowSpaces:
+        print(f"{Blanks}|") #print rows of |   |   |  |
+        y+=1
+    x+=1
+    y=0
+print(f"{Lines}+")
+    
+
     
 sys.exit(0)
